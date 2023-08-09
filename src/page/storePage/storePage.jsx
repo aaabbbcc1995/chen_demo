@@ -11,7 +11,7 @@ export default function StorePage(){
 
   return(
     <div className='store-page'>
-      {data?.length> 0 && <Empty/>}
+      {data?.length === 0 && <Empty/>}
       {data.map(item => (
         <div key={item.key} style={{display:'flex', flexDirection:'row', fontSize: '16px', fontWeight: 'bold'}}>
           <p>订单名: {item.name}&nbsp;&nbsp;</p>

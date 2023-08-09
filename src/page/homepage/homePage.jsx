@@ -13,6 +13,7 @@ import {useNavigate} from "react-router";
 import SalePage from "../salePage/salePage";
 import ProductPage from "../productPage/productPage";
 import DashboardPage from "../dashboardPage/dashboardPage";
+import StorePage from "../storePage/storePage";
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -59,9 +60,7 @@ export default function Homepage() {
           mode="inline"
           theme="light"
           items={localStorage.getItem('role') === 'zongjingli' ? items : itemCommon}
-          onClick={(item) => {
-            setMenuKey(item.key)
-          }}
+          onClick={(item) => {setMenuKey(item.key)}}
         />
       </div>
       <div className='homepage-content'>
@@ -73,6 +72,7 @@ export default function Homepage() {
         {menuKey === '1' && <DashboardPage/>}
         {menuKey === '2' && <SalePage/>}
         {menuKey === '3' && <ProductPage/>}
+        {menuKey === '4' && <StorePage/>}
       </div>
     </div>
   );

@@ -10,13 +10,15 @@
   width: 15%;
   max-width: 220px;
   min-width: 180px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .homepage .homepage-content{
   display: flex;
   flex-direction: column;
   flex: 1;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .homepage .homepage-logout{

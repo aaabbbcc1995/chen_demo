@@ -12,6 +12,7 @@ import {Button, Menu, message} from 'antd';
 import {useNavigate} from "react-router";
 import SalePage from "../salePage/salePage";
 import ProductPage from "../productPage/productPage";
+import DashboardPage from "../dashboardPage/dashboardPage";
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -69,6 +70,7 @@ export default function Homepage() {
             退出登陆
           </Button>
         </div>
+        {menuKey === '1' && <DashboardPage/>}
         {menuKey === '2' && <SalePage/>}
         {menuKey === '3' && <ProductPage/>}
       </div>

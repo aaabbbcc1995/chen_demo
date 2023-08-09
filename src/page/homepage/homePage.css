@@ -1,0 +1,31 @@
+.homepage{
+  width: 100%;
+  min-height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: row;
+}
+
+.homepage .homepage-slider{
+  width: 15%;
+  max-width: 220px;
+  min-width: 180px;
+  min-height: 100vh;
+}
+
+.homepage .homepage-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.homepage .homepage-logout{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.homepage .ant-menu{
+  height: 100%;
+}

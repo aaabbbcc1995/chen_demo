@@ -1,0 +1,20 @@
+.login-page{
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.login-page .login-page-container{
+  border-radius: 20px;
+  width: 400px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 50px;
+}
+
+.login-page .login-page-password{
+  margin-top: 20px;
+}
